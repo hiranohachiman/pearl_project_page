@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="VEGA: LLM-free Image Captioning Evaluation in Reference-flexible Settings">
-  <meta name="keywords" content="VEGA, LLM-free, Image Captioning Evaluation, Reference-based, Reference-free, ICCV 2025">
+  <meta name="description" content="Pearl: LLM-free Image Captioning Evaluation in Reference-flexible Settings">
+  <meta name="keywords" content="Pearl, LLM-free, Image Captioning Evaluation, Reference-based, Reference-free, ICCV 2025">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VEGA: LLM-free Image Captioning Evaluation in Reference-flexible Settings</title>
+  <title>Pearl: LLM-free Image Captioning Evaluation in Reference-flexible Settings</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -54,7 +54,7 @@
     <div class="container is-max-widescreen">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">VEGA: LLM-free Image Captioning Evaluation in Reference-flexible Settings</h1>
+          <h1 class="title is-1 publication-title">LLM-Free Image Captioning Evaluation in Reference-flexible Settings</h1>
           <span class="is-size-4 has-text-weight-bold">
             <a class="has-text-dark" href="#">ICCV 2025 Submission</a><br><br>
           </span>
@@ -97,7 +97,7 @@
     <div class="hero-body">
       <!-- 論文の趣旨を象徴するティーザー画像。必要に応じて画像を差し替えてください。 -->
       <figure class="image">
-        <img src="./static/images/eye_catch.png" alt="VEGA Teaser Image" style="border-radius: 15px; max-width: 50%; margin: auto;">
+        <img src="./static/images/eye_catch.png" alt="Pearl Teaser Image" style="border-radius: 15px; max-width: 50%; margin: auto;">
       </figure>
       <br>
       <h2 class="subtitle has-text-centered">
@@ -118,10 +118,10 @@
             We focus on the automatic evaluation of image captioning in both reference-based and reference-free settings. 
             Existing metrics based on Large Language Models (LLMs) have severe limitations due to their prohibitively long inference times.
             In contrast, few LLM-free metrics simultaneously demonstrate high performance in both settings. 
-            To address these issues, we propose VEGA, an LLM-free supervised metric for image captioning, which is applicable in both reference-based and reference-free settings. 
+            To address these issues, we propose Pearl, an LLM-free supervised metric for image captioning, which is applicable in both reference-based and reference-free settings. 
             We introduce a novel mechanism that adaptively learns rich representations of caption-caption and caption-image similarities. 
             Furthermore, we constructed a human-annotated dataset for image captioning metrics, which comprises approximately 333K human judgments collected from 2,360 annotators across over 75K images. 
-            Despite an inference time of just 8.2ms, VEGA outperformed other existing LLM-free metrics on the Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL datasets in both reference-based and reference-free settings.
+            Despite an inference time of just 8.2ms, Pearl outperformed other existing LLM-free metrics on the Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL datasets in both reference-based and reference-free settings.
           </p>
         </div>
       </div>
@@ -137,14 +137,14 @@
         <h2 class="title is-3">Method Overview</h2>
         <div class="content has-text-justified">
           <figure class="image">
-            <img src="./static/images/model.png" alt="Overview of the VEGA Model Architecture" />
-            <figcaption>Figure: Overview of the VEGA Model Architecture</figcaption>
+            <img src="./static/images/model.png" alt="Overview of the Pearl Model Architecture" />
+            <figcaption>Figure: Overview of the Pearl Model Architecture</figcaption>
           </figure>
           <p>
-            VEGA is designed to evaluate image captioning models efficiently.
+            Pearl is designed to evaluate image captioning models efficiently.
           </p>
           <p>
-            VEGA achieves robust performance in both reference-based and reference-free settings.
+            Pearl achieves robust performance in both reference-based and reference-free settings.
           </p>
         </div>
       </div>
@@ -160,7 +160,7 @@
         <h2 class="title is-3">Quantitative Results</h2>
         <div class="content has-text-justified">
           <p>
-            VEGA demonstrates state-of-the-art performance on standard benchmarks including Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL. Notably, in the reference-based setting, VEGA achieves high correlation with human judgments while maintaining an inference time of only 8.2ms per sample.
+            Pearl demonstrates state-of-the-art performance on standard benchmarks including Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL. Notably, in the reference-based setting, Pearl achieves high correlation with human judgments while maintaining an inference time of only 8.2ms per sample.
           </p>
         </div>
         <figure class="image">
