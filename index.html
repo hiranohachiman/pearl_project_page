@@ -114,13 +114,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We focus on the automatic evaluation of image captioning in both reference-based and reference-free settings. 
-            Existing metrics based on Large Language Models (LLMs) have severe limitations due to their prohibitively long inference times.
-            In contrast, few LLM-free metrics simultaneously demonstrate high performance in both settings. 
-            To address these issues, we propose Pearl, an LLM-free supervised metric for image captioning, which is applicable in both reference-based and reference-free settings. 
-            We introduce a novel mechanism that adaptively learns rich representations of caption-caption and caption-image similarities. 
-            Furthermore, we constructed a human-annotated dataset for image captioning metrics, which comprises approximately 333K human judgments collected from 2,360 annotators across over 75K images. 
-            Despite an inference time of just 8.2ms, Pearl outperformed other existing LLM-free metrics on the Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL datasets in both reference-based and reference-free settings.
+            We focus on the automatic evaluation of image captions in both reference-based and reference-free settings. Existing metrics based on large language models (LLMs) favor their own generations; therefore, the neutrality is in question. Most LLM-free metrics do not suffer from such an issue, whereas they do not always demonstrate high performance. To address these issues, we propose Pearl, an LLM-free supervised metric for image captioning, which is applicable to both reference-based and reference-free settings. We introduce a novel mechanism that learns the representations of image--caption and caption--caption similarities. 
+            Furthermore, we construct a human-annotated dataset for image captioning metrics, that comprises approximately 333k human judgments collected from 2,360 annotators across over 75k images. 
+            Pearl outperformed other existing LLM-free metrics on the Composite, Flickr8K-Expert, Flickr8K-CF, Nebula, and FOIL datasets in both reference-based and reference-free settings.
           </p>
         </div>
       </div>
