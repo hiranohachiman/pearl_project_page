@@ -166,6 +166,707 @@
   </div>
 </section>
 
+<!-- Qualitative Results Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+        
+        <!-- Setting selection tabs -->
+        <div class="tabs is-centered is-boxed">
+          <ul id="setting-tabs">
+            <li class="is-active"><a onclick="showSetting('reference-based')">Reference-based</a></li>
+            <li><a onclick="showSetting('reference-free')">Reference-free</a></li>
+          </ul>
+        </div>
+        
+        <!-- Reference-based examples -->
+        <div id="reference-based-setting" class="setting-container">
+          <h3 class="title is-4 has-text-centered">Reference-based Evaluation</h3>
+          <p class="subtitle is-6 has-text-centered">Evaluating captions with reference captions available</p>
+          
+          <!-- Image preview tabs for reference-based examples -->
+          <div class="image-preview-tabs">
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab is-active" onclick="showQualExample('ref-based-1')">
+                  <img src="./static/images/0966b6d3e979b3871c56e2405d61daf1" alt="Reference-based Example 1 Preview">
+                  <span class="preview-number">1</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-based-2')">
+                  <img src="./static/images/6adb81773ad98818e08ef8c52082dd5e" alt="Reference-based Example 2 Preview">
+                  <span class="preview-number">2</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-based-3')">
+                  <img src="./static/images/bde02880fc102a5288fd713869c66571" alt="Reference-based Example 3 Preview">
+                  <span class="preview-number">3</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-based-4')">
+                  <img src="./static/images/834e7833811b2b6332fc6cae0a8a53bf" alt="Reference-based Example 4 Preview">
+                  <span class="preview-number">4</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-based-5')">
+                  <img src="./static/images/2eeb3bd2e5d1fe61125e650988cda121" alt="Reference-based Example 5 Preview">
+                  <span class="preview-number">5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Reference-based example content containers -->
+          <div id="ref-based-1" class="qual-example">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/0966b6d3e979b3871c56e2405d61daf1" alt="Reference-based Example 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-primary">Reference Caption</h4>
+                      <p class="subtitle is-6">a guy doing a jump with his skateboard</p>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a boy on a skateboard doing a trick</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.86</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.91</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-based-2" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/6adb81773ad98818e08ef8c52082dd5e" alt="Reference-based Example 2" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-primary">Reference Caption</h4>
+                      <p class="subtitle is-6">A woman riding on the back of a brown horse over an obstacle.</p>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a person riding a horse jumping over an obstacle.</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.83</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.92</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-based-3" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/bde02880fc102a5288fd713869c66571" alt="Reference-based Example 3" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-primary">Reference Caption</h4>
+                      <p class="subtitle is-6">A woman in a colorful shirt is skiing while holding poles.</p>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a person in a blue jacket is skiing down a hill</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.53</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.50</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-based-4" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/834e7833811b2b6332fc6cae0a8a53bf" alt="Reference-based Example 4" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-primary">Reference Caption</h4>
+                      <p class="subtitle is-6">A man and women eating a plate of food with chop sticks. </p>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a man and a woman sitting at a table with a laptop</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.54</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.50</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-based-5" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/2eeb3bd2e5d1fe61125e650988cda121" alt="Reference-based Example 5" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-primary">Reference Caption</h4>
+                      <p class="subtitle is-6">Two stuffed animals sit together on a chair.</p>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a traffic light with a street sign on it</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.01</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Reference-free examples -->
+        <div id="reference-free-setting" class="setting-container" style="display: none;">
+          <h3 class="title is-4 has-text-centered">Reference-free Evaluation</h3>
+          <p class="subtitle is-6 has-text-centered">Evaluating captions without reference captions</p>
+          
+          <!-- Image preview tabs for reference-free examples -->
+          <div class="image-preview-tabs">
+            <div class="columns is-mobile is-multiline">
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab is-active" onclick="showQualExample('ref-free-1')">
+                  <img src="./static/images/93e562fb6024282d013b28e3e402e3ee" alt="Reference-free Example 1 Preview">
+                  <span class="preview-number">1</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-free-2')">
+                  <img src="./static/images/6862d132b568f8c654862e73807f6cd5" alt="Reference-free Example 2 Preview">
+                  <span class="preview-number">2</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-free-3')">
+                  <img src="./static/images/3843f9f014667b7fa10a65d2807a3fb0" alt="Reference-free Example 3 Preview">
+                  <span class="preview-number">3</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-free-4')">
+                  <img src="./static/images/a6dc43fa2ae6bda4fb678e9e44fd8737" alt="Reference-free Example 4 Preview">
+                  <span class="preview-number">4</span>
+                </div>
+              </div>
+              <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
+                <div class="preview-tab" onclick="showQualExample('ref-free-5')">
+                  <img src="./static/images/afd98117316f524567d334a1cf794148" alt="Reference-free Example 5 Preview">
+                  <span class="preview-number">5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Reference-free example content containers -->
+          <div id="ref-free-1" class="qual-example">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/93e562fb6024282d013b28e3e402e3ee" alt="Reference-free Example 1" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a bus is parked on the side of the road</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.01</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-free-2" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/6862d132b568f8c654862e73807f6cd5" alt="Reference-free Example 2" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a fire hydrant with a blue top on it</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.58</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.55</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-free-3" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/3843f9f014667b7fa10a65d2807a3fb0" alt="Reference-free Example 3" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a train is parked on the tracks near a building</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.63</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.64</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-free-4" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/a6dc43fa2ae6bda4fb678e9e44fd8737" alt="Reference-free Example 4" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a man holding a yellow surfboard in the ocean</p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.84</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.90</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ref-free-5" class="qual-example" style="display: none;">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/afd98117316f524567d334a1cf794148" alt="Reference-free Example 5" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <div class="columns">
+                    <div class="column">
+                      <h4 class="title is-5 has-text-info">Candidate Caption</h4>
+                      <p class="subtitle is-6">a woman in a colorful dress holding an umbrella. </p>
+                    </div>
+                  </div>
+                  <hr class="has-background-grey-lighter">
+                  <div class="columns is-mobile has-text-centered">
+                    <div class="column is-7">
+                      <div class="notification is-primary pearl-score">
+                        <p class="heading has-text-white">Pearl Score</p>
+                        <p class="title has-text-white">0.84</p>
+                        <span class="icon is-large has-text-white">
+                          <i class="fas fa-check-circle"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="column is-5">
+                      <div class="notification is-light">
+                        <p class="heading">Human Score</p>
+                        <p class="title">0.83</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add custom CSS for animations and enhanced styling -->
+        <style>
+          .card {
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+          }
+          
+          .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+          }
+          
+          .tabs.is-boxed li.is-active a {
+            background-color: #f5f5f5;
+            border-bottom-color: transparent;
+            border-radius: 4px 4px 0 0;
+          }
+          
+          .pearl-score {
+            background: linear-gradient(135deg, #4a7bff, #00d1b2);
+            position: relative;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 209, 178, 0.3);
+          }
+          
+          .pearl-score:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 209, 178, 0.4);
+          }
+          
+          .pearl-score .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+          
+          .notification.is-light {
+            background-color: #f5f5f5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+          }
+          
+          .notification.is-light:hover {
+            background-color: #f8f8f8;
+          }
+          
+          .qual-example {
+            animation: fadeIn 0.5s ease;
+          }
+          
+          .setting-container {
+            animation: fadeIn 0.5s ease;
+          }
+          
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          
+          /* Image preview tabs styling */
+          .image-preview-tabs {
+            margin: 1.5rem 0;
+          }
+          
+          .preview-tab {
+            position: relative;
+            cursor: pointer;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 80px;
+            margin-bottom: 10px;
+          }
+          
+          .preview-tab img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+          }
+          
+          .preview-tab.is-active {
+            box-shadow: 0 4px 10px rgba(50, 115, 220, 0.4);
+            transform: translateY(-2px);
+          }
+          
+          .preview-tab.is-active img {
+            opacity: 1;
+          }
+          
+          .preview-tab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+          }
+          
+          .preview-tab:hover img {
+            opacity: 0.9;
+          }
+          
+          .preview-number {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+          }
+          
+          .preview-tab.is-active .preview-number {
+            background-color: #3273dc;
+          }
+          
+          /* Setting-specific styling */
+          #reference-based-setting h4.title.has-text-primary {
+            color: #3273dc !important;
+          }
+          
+          #reference-free-setting h4.title.has-text-info {
+            color: #209cee !important;
+          }
+          
+          /* Add Font Awesome if not already included */
+          @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+        </style>
+        
+        <!-- JavaScript for tab switching -->
+        <script>
+          // Show setting (reference-based or reference-free)
+          function showSetting(setting) {
+            // Hide all setting containers
+            document.querySelectorAll('.setting-container').forEach(function(container) {
+              container.style.display = 'none';
+            });
+            
+            // Show selected setting container
+            document.getElementById(setting + '-setting').style.display = 'block';
+            
+            // Update active tab
+            document.querySelectorAll('#setting-tabs li').forEach(function(tab) {
+              if (tab.querySelector('a').getAttribute('onclick').includes(setting)) {
+                tab.classList.add('is-active');
+              } else {
+                tab.classList.remove('is-active');
+              }
+            });
+            
+            // Reset example selection for the current setting
+            if (setting === 'reference-based') {
+              showQualExample('ref-based-1');
+            } else {
+              showQualExample('ref-free-1');
+            }
+          }
+          
+          // Show specific example
+          function showQualExample(exampleId) {
+            // Determine which setting we're in
+            const setting = exampleId.startsWith('ref-based') ? 'reference-based' : 'reference-free';
+            const container = document.getElementById(setting + '-setting');
+            
+            // Hide all examples in this setting
+            container.querySelectorAll('.qual-example').forEach(function(example) {
+              example.style.display = 'none';
+            });
+            
+            // Show selected example
+            document.getElementById(exampleId).style.display = 'block';
+            
+            // Update active tab in this setting
+            container.querySelectorAll('.preview-tab').forEach(function(tab) {
+              if (tab.getAttribute('onclick').includes(exampleId)) {
+                tab.classList.add('is-active');
+              } else {
+                tab.classList.remove('is-active');
+              }
+            });
+          }
+        </script>
+        
+        <div class="content has-text-justified mt-6">
+          <!-- 結論テキストを削除 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- BibTeX Section -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
