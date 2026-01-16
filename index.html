@@ -68,32 +68,25 @@
             <span class="institution-block">Keio University</span>
           </div>
 
-          <!-- <div class="publication-links">
+          <div class="publication-links" style="margin-top: 1.5rem;">
             <span class="link-block">
-              <a href="#" class="external-link button is-normal is-rounded is-dark">
+              <a href="https://github.com/hiranohachiman/Pearl" target="_blank" class="external-link button is-normal is-rounded" style="background: linear-gradient(135deg, #24292e, #444d56); color: white; border: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(36, 41, 46, 0.3);">
                 <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>PDF</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a href="./static/code/Pearl.zip" class="external-link button is-normal is-rounded is-dark" download>
-                <span class="icon">
-                  <i class="fas fa-code"></i>
+                  <i class="fab fa-github"></i>
                 </span>
                 <span>Code</span>
               </a>
             </span>
             <span class="link-block">
-              <a href="https://iccv-spica.s3.ap-southeast-1.amazonaws.com/spica_dataset.zip" class="external-link button is-normal is-rounded is-dark" download>
+              <a href="https://huggingface.co/datasets/hiranohachiman/Spica" target="_blank" class="external-link button is-normal is-rounded" style="background: linear-gradient(135deg, #ff9d00, #ffcc00); color: #1a1a1a; border: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 157, 0, 0.3);">
                 <span class="icon">
-                  <i class="fas fa-database"></i>
+                  🤗
                 </span>
                 <span>Dataset</span>
               </a>
-            </span> -->
+            </span>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -812,6 +805,21 @@
           
           /* Add Font Awesome if not already included */
           @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+          
+          /* Publication link buttons styling */
+          .publication-links .link-block {
+            display: inline-block;
+            margin: 0.3rem;
+          }
+          
+          .publication-links .external-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+          }
+          
+          .publication-links .external-link .icon {
+            margin-right: 0.3rem;
+          }
         </style>
         
         <!-- JavaScript for tab switching -->
